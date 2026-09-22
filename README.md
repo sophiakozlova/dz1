@@ -31,12 +31,12 @@
 
 int main() {
     // Объявление и инициализация констант
-    const float BASE_HOURS = 38.0;      // Норма часов
-    const float OVERTIME_COEF = 1.5;    // Коэффициент сверхурочных
+    const float BASE_HOURS = 38.0;      
+    const float OVERTIME_COEF = 1.5;    
 
     // Шаг 1: Задание конкретных значений переменных
-    float x = 200.0; // Почасовая ставка (руб.)
-    float a = 40.0;  // Отработано часов (a > 38)
+    float x = 200.0; 
+    float a = 40.0;  
 
     setlocale(LC_CTYPE, "");
 
