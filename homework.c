@@ -2,27 +2,26 @@
 #include <locale.h>
 
 int main() {
-    // Объявление и инициализация констант
+
     const float BASE_HOURS = 38.0;
     const float OVERTIME_COEF = 1.5;
 
-    // Шаг 1: Задание конкретных значений переменных
+    
     float x = 200.0;
     float a = 40.0;
 
-    setlocale(LC_CTYPE, "");
+    setlocale(LC_CTYPE, "RUS");
 
-    // Шаг 2: Расчет оплаты за первые 38 часов
     float base_pay = BASE_HOURS * x;
 
-    // Шаг 3: Расчет сверхурочных часов и их оплаты
+    
     float overtime_hours = a - BASE_HOURS;
     float overtime_rate = x * OVERTIME_COEF;
     float overtime_pay = overtime_hours * overtime_rate;
-    // Шаг 4: Расчет общей суммы к оплате
+   
     float total_pay = base_pay + overtime_pay;
 
-    // Шаг 5: Форматированный вывод результатов
+    
     printf("РАСЧЕТ ЗАРАБОТНОЙ ПЛАТЫ\n");
     printf("----------------------------------------\n");
     printf("УСЛОВИЯ:\n");
